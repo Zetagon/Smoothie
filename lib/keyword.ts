@@ -14,9 +14,9 @@ function addKeyword(element)
 //	element.previousElementSibling.innerHTML += "<button class='keyword' onclick='deleteElement(this)>" + element.value + "</button>";
 }
 
-window.onload = function()
+function activateKeyWordText()
 {
-	let searchboxes= document.getElementsByClassName("searchbox");
+	let searchboxes= document.getElementsByClassName("keywordText");
 	for(let i:number =0 ; i < searchboxes.length ; i++)
 	{
 		searchboxes.item(i).addEventListener("keypress", function(event){

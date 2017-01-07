@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outFile":"bin/newRecepie.js"
+    },
+	"include": [
+        "src/**/*"
+    ]
+}

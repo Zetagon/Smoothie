@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+  <div id="main_div">
+    <form id="search" onkeypress="return event.keyCode != 13">
+      <div id="search_name_div">
+	<span class="keywordCollection">
+	  <button class="keyword" onclick="deleteElement(this)">test</button>
+	</span>
+	<input type="text" class="keywordText" list="names" placeholder="Name"><br>
+	<datalist id="names">
+	  <option value="banan-smoothie">
+	</datalist>
+      </div>
+
+      <div id="search_type_div">
+	<span class="keywordCollection"></span>
+	<input type="text" class="keywordText" placeholder="Tag"><br>
+	<datalist id="types"></datalist>
+      </div>
+
+      <input type="submit">
+    </form>	
+  </div>
+
+  <script src="bin/script.js"></script>
+</body>
