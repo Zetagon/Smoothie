@@ -13,13 +13,26 @@ function addKeyword(element)
 	document.querySelector(selector).appendChild(child);
 //	element.previousElementSibling.innerHTML += "<button class='keyword' onclick='deleteElement(this)>" + element.value + "</button>";
 }
-
+/*IMPORTANT
+ *<div id = "prompt_name">
+ *
+ *  <span class="keywordCollection">
+ *  </span>
+ *
+ *  <input type="text" list="LISTNAME" placeholder="PLACEHOLDER"><br>
+ *  <datalist id="LISTNAMES">
+ *  </datalist>
+ *
+ * </div>
+ *
+ *
+ */
 function activateKeyWordText()
 {
-	let searchboxes= document.getElementsByClassName("keywordText");
-	for(let i:number =0 ; i < searchboxes.length ; i++)
+	let keyWordTextBox= document.getElementsByClassName("keywordText");
+	for(let i:number =0 ; i < keyWordTextBox.length ; i++)
 	{
-		searchboxes.item(i).addEventListener("keypress", function(event){
+		keyWordTextBox.item(i).addEventListener("keypress", function(event){
 			var key = event.which || event.keyCode;
 			if (key === 13) { // 13 is enter
 

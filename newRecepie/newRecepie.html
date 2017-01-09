@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-<title>Create new Recepie</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Create new Recepie</title>
 
-</head>
+  </head>
 </html>
 <body>
-	
+  <div id = "main_div" >
+    <div id = "prompt_name">
+
+      <span class="keywordCollection">
+      </span>
+
+      <input type="text" list="names" placeholder="Name" autofocus><br>
+      <datalist id="names">
+	      <option value="test">
+      </datalist>
+
+    </div>
+
+    <div id = "prompt_tag">
+    	
+      <span class="keywordCollection">
+      </span>
+
+      <input type="text" class="keywordText" list="tags" placeholder="Tags"><br>
+      <datalist id="tags">
+	      <option value="test">
+      </datalist>
+    </div>
+  </div>
+  <script src= "bin/newRecepie.js"></script>
 </body>
